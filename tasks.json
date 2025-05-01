@@ -1,0 +1,26 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "build word search",
+            "type": "shell",
+            "command": "g++",
+            "args": [
+                "-g",
+                "main.cpp",
+                "-I", "C:/SFML/SFML-2.4.2/include",  // Adjust this to your SFML include directory
+                "-L", "C:/SFML/SFML-2.4.2/lib",      // Adjust this to your SFML lib directory
+                "-lsfml-graphics",
+                "-lsfml-window",
+                "-lsfml-system",
+                "-o", "word_search.exe"
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "problemMatcher": [],
+            "detail": "Generated task for building word search application"
+        }
+    ]
+}
